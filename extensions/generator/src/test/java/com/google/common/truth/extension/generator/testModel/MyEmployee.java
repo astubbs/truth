@@ -35,6 +35,12 @@ public class MyEmployee extends Person {
 
   Map<String, Project> projectMap;
 
+  String sibling;
+
+  public boolean isSibling() {
+    return sibling.isEmpty();
+  }
+
   public MyEmployee(@Nonnull String name, long someLongAspect, @Nonnull ZonedDateTime birthday) {
     super(name, someLongAspect, birthday);
   }
