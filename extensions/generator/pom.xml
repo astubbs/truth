@@ -53,9 +53,16 @@
         <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
+            <!-- don't use 0.9.12 -->
+            <!-- https://github.com/ronmamo/reflections/issues/273 -->
             <version>0.9.12</version>
         </dependency>
-        <!-- reflections optional dependecy -->
+        <dependency>
+            <groupId>io.github.classgraph</groupId>
+            <artifactId>classgraph</artifactId>
+            <version>4.8.110</version>
+        </dependency>
+        <!-- reflections optional dependency -->
         <dependency>
             <groupId>org.dom4j</groupId>
             <artifactId>dom4j</artifactId>
